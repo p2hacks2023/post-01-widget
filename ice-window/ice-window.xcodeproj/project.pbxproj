@@ -39,7 +39,37 @@
 		6122D64D2B2DE25200919D07 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6122D64C2B2DE25200919D07 /* FirebaseStorage */; };
 		6122D64F2B2DE25200919D07 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6122D64E2B2DE25200919D07 /* FirebaseStorageCombine-Community */; };
 		6122D6512B2DE7A000919D07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6122D6502B2DE7A000919D07 /* GoogleService-Info.plist */; };
+		6122D6C72B2E85CD00919D07 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6122D6C62B2E85CD00919D07 /* WidgetKit.framework */; };
+		6122D6C92B2E85CD00919D07 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6122D6C82B2E85CD00919D07 /* SwiftUI.framework */; };
+		6122D6CC2B2E85CD00919D07 /* DisplayImgWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D6CB2B2E85CD00919D07 /* DisplayImgWidgetBundle.swift */; };
+		6122D6CE2B2E85CD00919D07 /* DisplayImgWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D6CD2B2E85CD00919D07 /* DisplayImgWidget.swift */; };
+		6122D6D02B2E85D100919D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6122D6CF2B2E85D100919D07 /* Assets.xcassets */; };
+		6122D6D42B2E85D100919D07 /* DisplayImgWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6122D6C42B2E85CC00919D07 /* DisplayImgWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6122D6D22B2E85D100919D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6122D5FE2B2DDF9000919D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6122D6C32B2E85CC00919D07;
+			remoteInfo = DisplayImgWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6122D6D52B2E85D100919D07 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6122D6D42B2E85D100919D07 /* DisplayImgWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6122D6062B2DDF9000919D07 /* ice-window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ice-window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +78,13 @@
 		6122D60D2B2DDF9300919D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6122D6102B2DDF9300919D07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6122D6502B2DE7A000919D07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6122D6C42B2E85CC00919D07 /* DisplayImgWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DisplayImgWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6122D6C62B2E85CD00919D07 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6122D6C82B2E85CD00919D07 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6122D6CB2B2E85CD00919D07 /* DisplayImgWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImgWidgetBundle.swift; sourceTree = "<group>"; };
+		6122D6CD2B2E85CD00919D07 /* DisplayImgWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImgWidget.swift; sourceTree = "<group>"; };
+		6122D6CF2B2E85D100919D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6122D6D12B2E85D100919D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +122,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6122D6C12B2E85CC00919D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6122D6C92B2E85CD00919D07 /* SwiftUI.framework in Frameworks */,
+				6122D6C72B2E85CD00919D07 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +139,8 @@
 			children = (
 				6122D6502B2DE7A000919D07 /* GoogleService-Info.plist */,
 				6122D6082B2DDF9000919D07 /* ice-window */,
+				6122D6CA2B2E85CD00919D07 /* DisplayImgWidget */,
+				6122D6C52B2E85CD00919D07 /* Frameworks */,
 				6122D6072B2DDF9000919D07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				6122D6062B2DDF9000919D07 /* ice-window.app */,
+				6122D6C42B2E85CC00919D07 /* DisplayImgWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +173,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6122D6C52B2E85CD00919D07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6122D6C62B2E85CD00919D07 /* WidgetKit.framework */,
+				6122D6C82B2E85CD00919D07 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6122D6CA2B2E85CD00919D07 /* DisplayImgWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6122D6CB2B2E85CD00919D07 /* DisplayImgWidgetBundle.swift */,
+				6122D6CD2B2E85CD00919D07 /* DisplayImgWidget.swift */,
+				6122D6CF2B2E85D100919D07 /* Assets.xcassets */,
+				6122D6D12B2E85D100919D07 /* Info.plist */,
+			);
+			path = DisplayImgWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +203,12 @@
 				6122D6022B2DDF9000919D07 /* Sources */,
 				6122D6032B2DDF9000919D07 /* Frameworks */,
 				6122D6042B2DDF9000919D07 /* Resources */,
+				6122D6D52B2E85D100919D07 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6122D6D32B2E85D100919D07 /* PBXTargetDependency */,
 			);
 			name = "ice-window";
 			packageProductDependencies = (
@@ -173,6 +244,23 @@
 			productReference = 6122D6062B2DDF9000919D07 /* ice-window.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6122D6C32B2E85CC00919D07 /* DisplayImgWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6122D6D82B2E85D100919D07 /* Build configuration list for PBXNativeTarget "DisplayImgWidgetExtension" */;
+			buildPhases = (
+				6122D6C02B2E85CC00919D07 /* Sources */,
+				6122D6C12B2E85CC00919D07 /* Frameworks */,
+				6122D6C22B2E85CC00919D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisplayImgWidgetExtension;
+			productName = DisplayImgWidgetExtension;
+			productReference = 6122D6C42B2E85CC00919D07 /* DisplayImgWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +272,9 @@
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					6122D6052B2DDF9000919D07 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					6122D6C32B2E85CC00919D07 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -205,6 +296,7 @@
 			projectRoot = "";
 			targets = (
 				6122D6052B2DDF9000919D07 /* ice-window */,
+				6122D6C32B2E85CC00919D07 /* DisplayImgWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +312,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6122D6C22B2E85CC00919D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6122D6D02B2E85D100919D07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,7 +332,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6122D6C02B2E85CC00919D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6122D6CE2B2E85CD00919D07 /* DisplayImgWidget.swift in Sources */,
+				6122D6CC2B2E85CD00919D07 /* DisplayImgWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6122D6D32B2E85D100919D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6122D6C32B2E85CC00919D07 /* DisplayImgWidgetExtension */;
+			targetProxy = 6122D6D22B2E85D100919D07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6122D6122B2DDF9300919D07 /* Debug */ = {
@@ -357,6 +474,7 @@
 		6122D6152B2DDF9300919D07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +504,7 @@
 		6122D6162B2DDF9300919D07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +531,60 @@
 			};
 			name = Release;
 		};
+		6122D6D62B2E85D100919D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BE7S85FN44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DisplayImgWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DisplayImgWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.osuosu.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6122D6D72B2E85D100919D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BE7S85FN44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DisplayImgWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DisplayImgWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.osuosu.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,6 +602,15 @@
 			buildConfigurations = (
 				6122D6152B2DDF9300919D07 /* Debug */,
 				6122D6162B2DDF9300919D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6122D6D82B2E85D100919D07 /* Build configuration list for PBXNativeTarget "DisplayImgWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6122D6D62B2E85D100919D07 /* Debug */,
+				6122D6D72B2E85D100919D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

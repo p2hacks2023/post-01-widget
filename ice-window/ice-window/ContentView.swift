@@ -1,40 +1,42 @@
-//
-//  ContentView.swift
-//  ice-window
-//
-//  Created by 榜士靖文 on 2023/12/16.
-//
-
 import SwiftUI
-import UIKit
 import FirebaseFirestore
 
 struct ContentView: View {
     
-    @State var moji = "aaaa";
+    @State var iceUrl: String = ""
     
     var body: some View {
         VStack {
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                // getData.listenMultiple()
+            Button("Button") {
                 Firestore.firestore().collection("windowList").document("myWindow").getDocument { (success, error) in
-                    if let error = error{
+                    if let error = error {
                         print(error.localizedDescription)
-                    }else{
-                        let URL = success!.data()
-                        print("Sucess")
-                        let data = success!.data();
-                        moji = data?["URL"] as? String ?? ""
+                    } else {
+                        let data = success!.data()
+                        print("Success")
+                        iceUrl = data?["URL"] as? String ?? ""
+                        
+                        if let imageUrl = URL(string: iceUrl) {
+                            AsyncImage(url: imageUrl) { image in
+                                image.resizable()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .frame(width: 240, height: 126)
+                        }
                     }
                 }
             }
+            .padding()
             
-            Text(moji);
+            Text(iceUrl)
+                .padding()
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
